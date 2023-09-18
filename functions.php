@@ -9,7 +9,12 @@
     };
     add_action('wp_enqueue_scripts' , 'university_files');
     function university_features(){
+        register_nav_menu('header_menu_location','Header menu location');
+        register_nav_menu('footer_location_one','Footer location one');
+        register_nav_menu('footer_location_two','Footer Location two');
         add_theme_support('title-tag');
     }
     add_action('after_setup_theme' , 'university_features');
+
+   
  ?>
