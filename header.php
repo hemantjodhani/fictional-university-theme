@@ -13,11 +13,7 @@
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
         <nav class="main-navigation">
-        <?php
-              wp_nav_menu(array(
-                'theme_location' => 'header_menu_location'
-              ));
-            ?>
+          <?php wp_nav_menu( 'main_menu' ) ?>
         </nav>
         <div class="site-header__util">
           <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
